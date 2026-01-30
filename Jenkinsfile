@@ -3,8 +3,8 @@ pipeline{
 
   environment {
     DOCKER_USER = 'sudhanshud100'
-    DOCKER_REPO_BACKEND = "{DOCKER_USER}/mern_backend"
-    DOCKER_REPO_FRONTEND = "{DOCKER_USER}/mern_frontend"
+    DOCKER_REPO_BACKEND = "${DOCKER_USER}/mern_backend"
+    DOCKER_REPO_FRONTEND = "${DOCKER_USER}/mern_frontend"
   }
 
   stages{
