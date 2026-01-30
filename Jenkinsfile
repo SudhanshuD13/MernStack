@@ -22,7 +22,7 @@ pipeline{
 
     stage('Login and Push'){
       withCredentials([usernamePassword(credentialsId: 'docker-hub-creds', passwordVariable: 'DOCKER_PASS', usernameVariable: 'DOCKER_USER_ENV')]){
-        sh "echo \$DOCKER_PASS | docker login -u \DOCKER_USER_ENV --password-stdin"
+        sh "echo \$DOCKER_PASS | docker login -u \$DOCKER_USER_ENV --password-stdin"
         sh "docker push ${DOCKER_REPO_BACKEND}:${BUILD_NUMBER}"
         sh "docker push ${DOCKER_REPO_FRONTEND}:${BUILD_NUMBER}"
         }
