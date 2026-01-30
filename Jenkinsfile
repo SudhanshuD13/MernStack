@@ -31,7 +31,7 @@ pipeline{
     }
     stage('Cleanup'){
       steps {
-        sh "docker emi ${env.DOCKER_REPO_BACKEND}:${env.BUILD_NUMBER} ${env.DOCKER_REPO_FRONTEND}:${env.BUILD_NUMBER}"
+        sh "docker rmi ${env.DOCKER_REPO_BACKEND}:${env.BUILD_NUMBER} ${env.DOCKER_REPO_FRONTEND}:${env.BUILD_NUMBER}"
       }
     }
   }
