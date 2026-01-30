@@ -181,7 +181,7 @@ docker pull sudhanshud100/mern-backend:<build-number>
 ## 👨‍💻 Author
 
 **Sudhanshu Dubey**  
-DevOps | Full Stack Developer | Cloud Enthusiast  
+DevOps Engineer
 
 ---
 
